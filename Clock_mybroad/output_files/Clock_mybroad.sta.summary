@@ -1,0 +1,189 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'Millisecond:m0|Millisecond_out'
+Slack : -15.236
+TNS   : -1222.690
+
+Type  : Slow Model Setup 'Clk_50MHz'
+Slack : -4.407
+TNS   : -243.064
+
+Type  : Slow Model Setup 'Second:m1|Second_out'
+Slack : -2.571
+TNS   : -13.696
+
+Type  : Slow Model Setup 'Sixty:m4|Sixty_out'
+Slack : -2.246
+TNS   : -10.842
+
+Type  : Slow Model Setup 'Sixty:m5|Sixty_out'
+Slack : -2.001
+TNS   : -6.292
+
+Type  : Slow Model Setup 'Channal[0]'
+Slack : -1.578
+TNS   : -9.849
+
+Type  : Slow Model Setup 'Data[0]'
+Slack : -0.321
+TNS   : -1.582
+
+Type  : Slow Model Hold 'Data[0]'
+Slack : -3.362
+TNS   : -21.741
+
+Type  : Slow Model Hold 'Channal[0]'
+Slack : -3.053
+TNS   : -21.473
+
+Type  : Slow Model Hold 'Millisecond:m0|Millisecond_out'
+Slack : -2.816
+TNS   : -2.816
+
+Type  : Slow Model Hold 'Clk_50MHz'
+Slack : -2.543
+TNS   : -5.086
+
+Type  : Slow Model Hold 'Second:m1|Second_out'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Hold 'Sixty:m4|Sixty_out'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Hold 'Sixty:m5|Sixty_out'
+Slack : 1.181
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'Millisecond:m0|Millisecond_out'
+Slack : -13.782
+TNS   : -1056.654
+
+Type  : Slow Model Removal 'Millisecond:m0|Millisecond_out'
+Slack : 5.699
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Clk_50MHz'
+Slack : -1.941
+TNS   : -89.497
+
+Type  : Slow Model Minimum Pulse Width 'Millisecond:m0|Millisecond_out'
+Slack : -0.742
+TNS   : -179.564
+
+Type  : Slow Model Minimum Pulse Width 'Second:m1|Second_out'
+Slack : -0.742
+TNS   : -10.388
+
+Type  : Slow Model Minimum Pulse Width 'Sixty:m4|Sixty_out'
+Slack : -0.742
+TNS   : -10.388
+
+Type  : Slow Model Minimum Pulse Width 'Sixty:m5|Sixty_out'
+Slack : -0.742
+TNS   : -7.420
+
+Type  : Slow Model Minimum Pulse Width 'Channal[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'Data[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'Millisecond:m0|Millisecond_out'
+Slack : -4.281
+TNS   : -320.540
+
+Type  : Fast Model Setup 'Clk_50MHz'
+Slack : -0.722
+TNS   : -37.601
+
+Type  : Fast Model Setup 'Second:m1|Second_out'
+Slack : -0.152
+TNS   : -0.517
+
+Type  : Fast Model Setup 'Sixty:m4|Sixty_out'
+Slack : -0.061
+TNS   : -0.085
+
+Type  : Fast Model Setup 'Channal[0]'
+Slack : -0.040
+TNS   : -0.040
+
+Type  : Fast Model Setup 'Sixty:m5|Sixty_out'
+Slack : 0.008
+TNS   : 0.000
+
+Type  : Fast Model Setup 'Data[0]'
+Slack : 0.820
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Data[0]'
+Slack : -1.424
+TNS   : -9.642
+
+Type  : Fast Model Hold 'Clk_50MHz'
+Slack : -1.350
+TNS   : -2.700
+
+Type  : Fast Model Hold 'Millisecond:m0|Millisecond_out'
+Slack : -1.280
+TNS   : -1.280
+
+Type  : Fast Model Hold 'Channal[0]'
+Slack : -1.207
+TNS   : -8.943
+
+Type  : Fast Model Hold 'Second:m1|Second_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Sixty:m4|Sixty_out'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'Sixty:m5|Sixty_out'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'Millisecond:m0|Millisecond_out'
+Slack : -3.820
+TNS   : -287.823
+
+Type  : Fast Model Removal 'Millisecond:m0|Millisecond_out'
+Slack : 1.911
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Clk_50MHz'
+Slack : -1.380
+TNS   : -60.380
+
+Type  : Fast Model Minimum Pulse Width 'Millisecond:m0|Millisecond_out'
+Slack : -0.500
+TNS   : -121.000
+
+Type  : Fast Model Minimum Pulse Width 'Second:m1|Second_out'
+Slack : -0.500
+TNS   : -7.000
+
+Type  : Fast Model Minimum Pulse Width 'Sixty:m4|Sixty_out'
+Slack : -0.500
+TNS   : -7.000
+
+Type  : Fast Model Minimum Pulse Width 'Sixty:m5|Sixty_out'
+Slack : -0.500
+TNS   : -5.000
+
+Type  : Fast Model Minimum Pulse Width 'Channal[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'Data[0]'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,1 @@
+module onekey(Reset_N,sample_clk,keyin,keyout);

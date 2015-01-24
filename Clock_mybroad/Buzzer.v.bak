@@ -1,0 +1,64 @@
+//2014年3月15日
+//蜂鸣器
+
+module Buzzer_dididi(Reset_N,Millisecond_in,Buzzer_trigger,Buzzer_out);
+input Reset_N;
+input Millisecond_in;
+input Buzzer_trigger;
+output Buzzer_out;
+reg Buzzer_out;
+reg[0:12] count;
+parameter Sound_Step = 10'd500;
+reg Trigger_Figure;
+
+
+
+always@(posedge Millisecond_in or posedge Buzzer_trigger or negedge Reset_N)
+begin
+if(!Reset_N)
+begin
+	Trigger_Figure <= 0;
+	Buzzer_out <= 1;
+	count <= 0;
+end
+else if(Buzzer_trigger)
+	begin		
+		Trigger_Figure <= 1;
+	end
+else if(Trigger_Figure == 1)
+		begin
+			count <= count + 1;
+			if(count <= Sound_Step)
+				begin
+					Buzzer_out <= 0;
+				end
+			if(count > Sound_Step && count <= 2*Sound_Step)
+				begin
+					Buzzer_out <= 1;
+				end
+			if(count > Sound_Step*2 && count <= 3*Sound_Step)
+				begin
+					Buzzer_out <= 0;
+				end
+			if(count > Sound_Step*3 && count <= 4*Sound_Step)
+				begin
+					Buzzer_out <= 1;
+				end
+			if(count > Sound_Step*4 && count <= 5*Sound_Step)
+				begin
+					Buzzer_out <= 0;
+				end
+			if(count > Sound_Step*5 && count < 6*Sound_Step)
+				begin
+					Buzzer_out <= 1;
+					Trigger_Figure <= 0;
+				end
+			if(count == 6*Sound_Step)
+			begin
+				count <= 0;
+			end
+		end
+end
+
+
+endmodule

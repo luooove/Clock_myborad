@@ -1,0 +1,27 @@
+module Buzzer_test(clk,beep);
+input clk;
+output beep;
+reg beep;
+reg[14:0] counter;
+reg [23:0] tonc;
+parameter clkdivider = 50000000/440/2;
+
+always @(posedge clk)
+begin
+
+end
+
+always @(posedge clk)
+begin
+if(counter == 0)
+	counter <= (tonc[23]? clkdivider-1 :clkdivider/2-1);
+else
+	counter <= counter-1;
+end
+
+always @(posedge clk)
+begin
+	if(counter ==0)
+		beep <= ~beep;
+end
+endmodule

@@ -1,0 +1,35 @@
+//Delay 1ms
+//2014年3月12日
+//Description : Output 1 Millisecond
+
+
+module Millisecond(Reset_N,Clk_50MHz,Millisecond_out);
+input Reset_N,Clk_50MHz;
+output Millisecond_out;
+
+reg Millisecond_out;
+reg[0:27] count;
+parameter Full = 28'h61A8;//9C4 61A8  h186A
+
+always@(posedge Clk_50MHz)
+begin
+	if(!Reset_N)
+		begin
+			Millisecond_out <= 0;
+			count <= 0;
+		end
+	else
+		begin
+			if(count == Full)
+				begin
+					Millisecond_out <= ~Millisecond_out;
+					count <= 0;
+				end
+			else
+				begin
+					count <= count + 1'b1;
+				end
+		end
+end
+
+endmodule

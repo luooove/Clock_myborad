@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at Clock_mybroad.v(43): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at Clock_mybroad.v(9): object "KEY_in" differs only in case from object "key_in" in the same scope
